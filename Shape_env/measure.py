@@ -102,7 +102,7 @@ while (cap.read()):
             panjang = panjang_pixel
 
             #Menggambarkan ukuran benda pada gambar
-            cv2.putText(orig, "L: {:.1f}CM".format((lebar_pixel/25.5)*1.469*0.68),(int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,0.7, (0,0,255), 2)
+            cv2.putText(orig, "L: {:.1f}CM".format((lebar_pixel/25.5)*0.99892),(int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,0.7, (0,0,255), 2)
             cv2.putText(orig, "P: {:.1f}CM".format((panjang_pixel/25.5)*1.469*0.847),(int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,0.7, (0,0,255), 2)
             #cv2.putText(orig,str(area),(int(x),int(y)),cv2.FONT_HERSHEY_SIMPLEX, 0.6,(0,0,0),2)
             hitung_objek+=1
